@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m1.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m2.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m3.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m4.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m5.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m6.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m7.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m8.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m9.xml
+Sitemap: https://www.rezlytix.com/content.php/sitemap/sitemap-m10.xml

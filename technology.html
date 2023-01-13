@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Data Science, Analytics, Data, sass, software company">
+	<meta name="msapplication-TitleImage" content="images/assets/ogg.png">
+	<meta name="description" content="Rezlytix">
+	<meta property="og:site_name" content="Rezlytix">
+	<meta property="og:url" content="https://www.rezlytix.com/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Rezlytix">
+	<meta name='og:image' itemprop="image" content='images/assets/ogg.png'>
+	<!--<meta property="og:image:width" content="300">-->
+	<!--<meta property="og:image:height" content="300">-->
+	<!-- For IE -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- For Resposive Device -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- For Window Tab Color -->
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#1E78FF">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#1E78FF">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1E78FF">
+	<title>Rezlytix</title>
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" sizes="56x56" href="images/logo/rezlytix_icon.png">
+	<!-- Main style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+	<!-- responsive style sheet -->
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+	<!--Font Awesome CDN-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+		integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	
+	<script src="sliderLogic.js" defer></script>
+
+	<!-- Fix Internet Explorer ______________________________________-->
+	<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+	.dropbtn {
+	 // background-color: #04AA6D;
+	  color: white;
+	  //padding: 16px;
+	  //font-size: 16px;
+	  border: none;
+	  margin-top:5px;
+	}
+	
+	.dropdown {
+	  position: relative;
+	  display: inline-block;
+	}
+	
+	.dropdown-content {
+	  display: none;
+	  position: absolute;
+	  background-color: #f1f1f1;
+	  min-width: 160px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	}
+	
+	.dropdown-content a {
+	  color: black;
+	  padding: 6px 10px;
+	  text-decoration: none;
+	  display: block;
+	}
+	
+	.dropdown-content a:hover {background-color: #ddd;}
+	
+	.dropdown:hover .dropdown-content {display: block;}
+	
+	.dropdown:hover .dropbtn {color: #029ddf;}
+	</style>
+
+	<style type="text/css">
+	::-webkit-scrollbar-thumb {
+    background: #029ddf !important;
+   
+}
+		* {
+  box-sizing: border-box;
+}
+p{
+	line-height: 1.2em !important;
+	font-size:22px !important;
+		}
+
+.wrapper {
+  //display: flex;
+  width: 80%;
+  //border:1px solid #fff;
+  justify-content: space-around;
+  margin-top:0px;
+  padding: 20px;
+
+}
+
+.card {
+	margin-bottom: 40px;
+	//margin-left: 50px;
+	border: none !important;
+  width: 48%;
+  float: left;
+  height: 250px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  //position: relative;
+  display: flex;
+  //align-items: flex-center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 15px;
+  transition: 0.4s ease-out;
+ 
+}
+.card:hover {
+  
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+  margin-top: -30px;
+
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  text-align: left;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+.info{
+	padding-top: 35px;
+	
+		}
+.fancy-feature-six{
+	//background: #222121 !important;
+		}
+
+
+		@media only screen and (max-width: 1200px) {
+  .card{
+    width: 100%;
+  }
+}
+
+
+.known-more-btn:hover{
+	background-color: #002b87 !important;
+	transition: 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .known-more-btn{
+    width: 50% !important;
+  }
+}
+
+
+.text {
+	
+	position: relative;
+	
+	
+}
+.text h5{
+	color: white !important;
+	font-weight: 100;
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+  #right-card{
+	margin-left: 35px;
+}
+}
+
+
+.card-text{
+	font-size: 16px !important;
+}
+
+
+@media only screen and (max-width: 800px) {
+  .t1{
+	width: 100% !important;
+	padding-left: 10px !important;
+}
+#demo-btn{
+	width: 230px;
+	margin-top: 50px !important;
+	margin-left: 10px;
+}
+.title-style-one p,.title-style-one h4{
+	margin-left: 0px !important;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+.architecture-img{
+    height:170px !important;
+}
+}
+
+#footer-text,#footer-text-1,#footer-text-2{
+    font-size:18px !important;
+}
+	</style>
+
+
+<style type="text/css">
+	::-webkit-scrollbar-thumb {
+background: #029ddf !important;
+
+}
+	
+	* {
+box-sizing: border-box;
+}
+.mt-250 {
+margin-top:0;
+}	
+p{
+line-height: 1.2em !important;
+font-size:18px !important;
+	}
+
+.wrapper {
+//display: flex;
+width: 100%;
+justify-content: space-around;
+margin-top:0px;
+}
+
+.card1 {
+margin-bottom: 40px;
+margin-right: 20px;
+width: 31%;
+float: left;
+height: 250px;
+border-radius: 15px;
+padding: 1.5rem;
+background: white;
+position: relative;
+//display: flex;
+//align-items: flex-center;
+border: none !important;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transition: 0.4s ease-out;
+//box-shadow: 5px 5px #4a4848f7;
+}
+.card1:hover {
+transform: translateY(20px);
+}
+.card1:hover:before {
+opacity: 1;
+}
+.card1:hover .info1 {
+opacity: 1;
+transform: translateY(0px);
+}
+.card1:before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+height: 100%;
+border-radius: 15px;
+background: rgba(0, 0, 0, 0.6);
+z-index: 2;
+transition: 0.5s;
+opacity: 0;
+}
+.card1 img {
+width: 100%;
+height: 100%;
+-o-object-fit: cover;
+ object-fit: cover;
+position: absolute;
+top: 0;
+left: 0;
+border-radius: 15px;
+}
+.card1 .info1 {
+position: relative;
+z-index: 3;
+color: white;
+opacity: 0;
+margin-top: -15px;
+
+transform: translateY(30px);
+transition: 0.5s;
+}
+.card1 .info1 h1 {
+margin: 0px;
+}
+.card1 .info1 p {
+letter-spacing: 1px;
+font-size: 16px !important;
+margin-top: 8px;
+border: none !important;
+text-align: left;
+
+}
+.card1 .info1 button {
+padding: 0.6rem;
+outline: none;
+border: none;
+border-radius: 3px;
+background: white;
+color: black;
+font-weight: bold;
+cursor: pointer;
+transition: 0.4s ease;
+}
+.card1 .info1 button:hover {
+background: dodgerblue;
+color: white;
+}
+.info1{
+padding-top: 13px;
+
+	}
+.fancy-feature-six{
+
+	}
+	@media only screen and (max-width: 1200px) {
+.card1{
+width: 100%;
+}
+}
+
+.text1 {
+
+position: relative;
+
+
+}
+.text1 h5{
+color: white !important;
+font-weight: 100;
+}
+.card1 p{
+font-weight: 100;
+}
+.para-text1{
+font-size: 22px !important;
+}
+.fancy-feature-five li{
+color: #fff !important;
+}
+.fancy-feature-five ul{
+//margin-top: 50px;
+}
+.custom-list-bullet{
+//position: relative;
+//top: 2px !important;
+
+}
+.service-list{
+font-size: 17px !important;
+}
+
+
+
+
+#product-card{
+margin-top: -50px !important;
+}
+
+#call-to-action a:hover {
+  color: #fff !important;
+}
+</style>
+
+
+</head>
+
+<body>
+	<div class="main-page-wrapper">
+		<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+		<section>
+			<div id="preloader">
+					<div id="ctn-preloader" class="ctn-preloader">
+						<div class="animation-preloader">
+							<div class="icon"><img src="images/logo/rezlytix_icon.png" alt="" class="m-auto d-block" width="38"></div>
+							<div class="txt-loading mt-2">
+								<span data-text-preloader="R" class="letters-loading">
+									R
+								</span>
+								<span data-text-preloader="E" class="letters-loading">
+									E
+								</span>
+								<span data-text-preloader="Z" class="letters-loading">
+									Z
+								</span>
+								<span data-text-preloader="L" class="letters-loading">
+									L
+								</span>
+								<span data-text-preloader="Y" class="letters-loading">
+									Y
+								</span>
+								<span data-text-preloader="T" class="letters-loading">
+									T
+								</span>
+								<span data-text-preloader="I" class="letters-loading">
+									I
+								</span>
+								<span data-text-preloader="X" class="letters-loading">
+									X
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+		</section>
+
+
+		<!-- 
+			=============================================
+				Search
+			============================================== 
+			-->
+		<!-- <div class="offcanvas offcanvas-top theme-search-form justify-content-center" tabindex="-1" id="offcanvasTop">
+				<button type="button" class="close-btn tran3s" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+				<div class="form-wrapper">
+					<form action="#">
+						<input type="text" placeholder="Search Keyword....">
+					</form>
+				</div>
+			</div> -->
+
+
+		<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+		<header class="theme-main-menu sticky-menu theme-menu-two">
+			<div class="inner-content">
+				<div class="container d-flex align-items-center justify-content-between">
+					<div class="logo order-lg-0 navbar-logo"><a href="index.html" class="d-block"><img
+								src="images/logo/rezlytix logo_white.png" alt="" width="200"></a></div>
+					<div class="d-flex flex-row align-items-center">
+						<nav class="navbar navbar-expand-lg order-lg-2 mr-2">
+							<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+								data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+								aria-label="Toggle navigation">
+								<span></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarNav">
+								<ul class="navbar-nav">
+									<li class="d-block d-lg-none">
+										<div class="logo"><a href="index.html"><img
+													src="images/logo/rezlytix logo-01.png" alt="" width="160"></a></div>
+									</li>
+									
+									<li class="nav-item">
+										<a class="nav-link active dropdown" href="index.html" role="button">Home</a>
+									</li>
+									<li class="nav-item">
+										
+										<a class="nav-link" href="service.html" role="button">Our Products</a>
+									</li>
+                                   
+									<li class="nav-item active dropdown">
+										<a class="nav-link" href="technology.html" role="button" data-bs-toggle="dropdown"
+											data-bs-auto-close="outside" aria-expanded="false">Technology</a>
+									</li>
+                                    <li class="nav-item">
+										<a class="nav-link" href="solution.html" role="button">Solutions</a>
+									</li>
+                                    <li class="nav-item">
+										<a class="nav-link" href="case-study.html" role="button">Case Studies</a>
+                                       
+									</li>
+									
+									
+                                    <div class="dropdown">
+										<button class="dropbtn nav-link">About Us</button>
+										<div class="dropdown-content">
+											<a href="company-background.html">company</a>
+											<a href="about-us.html">Our Team</a>
+										 
+										</div>
+									  </div>
+                                   
+									
+								</ul>
+								<!-- Mobile Content -->
+								<div class="mobile-content d-block d-lg-none">
+									<div class="d-flex flex-column align-items-center justify-content-center mt-70">
+										<a href="demo.php" class="get-in-touch-btn-2">Get in Touch</a>
+									</div>
+								</div> <!-- /.mobile-content -->
+							</div>
+						</nav>
+						<a href="demo.php" class="get-in-touch-btn d-none d-lg-block order-lg-3">Get in Touch</a>
+					</div>
+				</div>
+			</div> <!-- /.inner-content -->
+		</header> <!-- /.theme-main-menu -->
+
+		<!--Landing page carousels-->
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-ride="carousel">
+			
+			<div class="carousel-inner">
+				<div class="overlay"></div>
+				<video autoplay muted loop id="myVideo" playsinline width="100%" height="100%">
+					<source src="./images/assets/bg1.mp4" type="video/mp4">
+					
+				</video>
+
+				
+				<div class="carousel-item active">
+					<div class="hero-banner-two hero-banner-two-bg2">
+						<div class="bg-wrapper">
+							<div class="container mb-80">
+								<div class="row">
+									<div class="col-xl-8 col-md-12">
+										<h1 class="hero-heading">Think Deep Learning</h1>
+										<h1 class="hero-subheading-2">Think Rezlytix</h1>
+										<ul class="style-none button-group d-sm-flex align-items-center">
+											<li class="me-4 mt-100"><a href="demo.php"
+													class="btn-one ripple-btn">Get in Touch</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="notification_text" style="margin-top: 50px;">
+									<img src="./images/india_energy_week.png" style="width: 408px;height: 101px;"/>
+									<h3 style="color: #fff;margin-top: 30px;font-size: 20px;">We will be showcasing our technology at <a href="https://www.indiaenergyweek.com/" target="_blank" style="cursor: pointer;color: #029ddf;text-decoration: underline;">India Energy Week </a> between 6 - 8 February, 2023.
+										Please visit us at our exhibit <b style="color:#029ddf" >(5E93) </b>to learn more about our exciting offerings.
+										</h3>
+									</div>
+							</div> <!-- /.container -->
+						</div> <!-- /.bg-wrapper -->
+					</div>
+					
+				</div>
+				
+				
+			</div>
+			
+		</div>
+		
+		<!-- ./Landing page carousels-->
+        <br>
+		<div class="fancy-feature-nineteen position-relative pt-30 lg-pt-80" style="content-visibility: auto;">
+			<div class="container">
+				<div class="row justify-content-center" >
+					<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+						<h2 class="main-title" style="">Resolution is a game of information</h2>
+						
+					</div>
+					
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="padding-top:40px;" >	
+						<img src="images/technology2.png" style=""/>
+						
+						
+					</div>
+					
+				</div>
+				
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+
+		<br>
+		<br>
+		<br>
+
+		<!--
+			=====================================================
+				Unlocking Value section
+			=====================================================
+			-->
+
+		
+		<!-- ./Unlocking value section-->
+		<div class="fancy-feature-nineteen position-relative pt-30 lg-pt-80" style="content-visibility: auto;">
+			<div class="container">
+				<div class="row justify-content-center" >
+					<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+						<h2 class="main-title" style="">A Revolutionary Approach To Resolution</h2>
+						
+					</div>
+					<div class="col-xxl-1 col-lg-1 col-md-12 col-sm-12" style="padding: 10px;padding-top:10px;" >	
+						<img src="images/test3.png" style="width: 100px;height:100px;margin-bottom: 20px;"/>
+						
+						
+					</div>
+					<div class="col-xxl-11 col-lg-11 col-md-12 col-sm-12" style="" >	
+						
+						<h2 style="">DIME<br>
+							Deep information maximization Engine
+						</h2>	
+						
+					</div>
+					<div style="margin-top: 100px;"></div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="" >
+						
+						<h3 class="main-title">Super resolution technology that creates sharper models.</h3>
+						<ul style="line-height: 1.6;margin-left: -10px;">
+							<li style="margin-top: 30px;">Bias and Assumption free deep learning based simultaneous seismic and property modelling. </li>
+							<li style="margin-top: 10px;">Multiband information injection for optimizing accuracy. </li>
+							<li style="margin-top: 10px;">Boosted structural control to honor local and global trends. </li>
+							<li style="margin-top: 10px;">Scalable and easy to parameterize. </li>
+						</ul>
+				</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="" >
+						
+						<video autoplay muted loop playsinline >
+							<source src="./images/dime.mp4" type="video/mp4">
+							
+						</video>
+					</div>
+					
+					
+					
+				</div>
+				
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+		
+		
+
+	
+           
+		
+
+
+
+
+
+						
+				
+		<br>
+		<br>
+		<!--Our products-->
+        <div class="fancy-feature-nineteen position-relative pt-130 lg-pt-80" style="content-visibility: auto;margin-bottom: 115px;padding-top: 0;">
+			<div class="container">
+                
+				<div class="row justify-content-center" >
+                    <div class="title-style-one mb-60 lg-mb-30">
+                       
+                        </div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" >
+						<div class="block-style-nine" data-aos="fade-right">
+
+							<img src="images/fig1.png"/>
+						</div> <!-- /.block-style-thirteen -->
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" >
+						<div class="block-style-nine" data-aos="fade-right">
+
+							<img src="images/fig2.png" />
+						</div> <!-- /.block-style-thirteen -->
+					</div>
+				</div>
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+
+
+       <!---Call To Action-->
+		
+		<div class="fancy-feature-two position-relative" >
+			<div class="container">
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 ms-auto mb-30" style="padding: 50px;background-color: #029ddf;">
+						<p style="text-align: center;color:#fff;">Bring the power of super resolution to your workflow !!</p>
+						<div style="display: flex;justify-content: center;" id="call-to-action"   >
+						<a class="known-more-btn" href="#" style="background: #fff;margin: auto;width: 20%;padding: 5px;border-radius: 7px;text-align: center;cursor: pointer;margin-top: 5px;">Know More</a>
+							 
+					</div>
+						</div>
+						
+				
+			</div> <!-- /.container -->
+		</div>
+		<!-- -->
+
+
+        
+		<!-- 
+			=============================================
+				Features-part-two
+			============================================== 
+			-->
+			<div>
+			<div class="fancy-feature-six position-relative pt-100 pb-100" style="background: #222121;">
+				<div class="container" >
+					<div class="title-style-one mb-60 lg-mb-30">
+						<h2 class="main-title" style="color: #fff; margin-bottom: 20px;">Our Deep Learning Platform</h2>
+						<p style="font-size:18px;color:#fff;line-height: 1.2em">Conventional workflows are known to be constrained by multiple geophysical assumptions that render the results susceptible to human biases. 
+Furthermore, adopting modern AI algorithms also comes with its own set of multi-faceted challenges than a simple game play would let on.
+							<br>
+							<br>
+Generous amounts of time & effort go into the process of evolving seismic data into actionable intelligence and elevating the narrative around understanding the subsurface.
+<br>
+<br>
+Here's where Rezlytix emerges as a true game-changer.</p>
+					</div>
+					<div class="row justify-content-center">
+					<div class="wrapper" >
+						  <div class="card"><img src="images/assets/t1.png"/>
+						  	<div class="text">
+						  		<h5 style="font-size: 24px;">Intelligent</h5>
+						  	</div>
+						    <div class="info">
+
+						      <p style="text-align: left;padding: 0px 0px;width: 100%;margin: auto;" class="card-text">Smart data IO, automation,<br/> in-built hyperparameter tuning</p>
+
+						    </div>
+						  </div>
+						  <div class="card" id="right-card"><img src="images/assets/t2.png"/>
+						  	<div class="text">
+						  		<h5 style="font-size: 24px;">Robust</h5>
+						  	</div>
+						    <div class="info">
+
+						      <p style="font-size: 24px;padding: 10px 0px;width: 100%;margin: auto;" class="card-text">Assumption free, geology honored, robust algorithms</p>
+
+						    </div>
+						  </div>
+						  <div class="card"><img src="images/assets/t3.png"/>
+						  	<div class="text">
+						  		<h5 style="font-size: 24px;">Scalable</h5>
+						  	</div>
+						    <div class="info">
+
+						      <p style="font-size: 24px;padding: 10px 0px;width: 100%;margin: auto;" class="card-text">Cloud scale provider-agnostic deployments</p>
+
+						    </div>
+						  </div>
+						  <div class="card" id="right-card"><img src="images/assets/t4.png"/>
+						  	<div class="text">
+						  		<h5 style="font-size: 24px;">Extensible</h5>
+						  	</div>
+						    <div class="info">
+
+						      <p style="font-size: 24px;padding: 10px 0px;width: 100%;margin: auto;" class="card-text">Customized solutions & rapid prototyping</p>
+
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+
+
+		<!---Call To Action-->
+		<br>
+		<div class="fancy-feature-two position-relative" >
+			<div class="container">
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 ms-auto mb-30" style="padding: 50px;background-color: #029ddf;">
+						<p style="text-align: center;color:#fff;">Bring the power of super resolution to your workflow !!</p>
+						<div style="display: flex;justify-content: center;" id="call-to-action"   >
+						<a class="known-more-btn" href="#" style="background: #fff;margin: auto;width: 20%;padding: 5px;border-radius: 7px;text-align: center;cursor: pointer;margin-top: 5px;">Know More</a>
+							 
+					</div>
+						</div>
+						
+				
+			</div> <!-- /.container -->
+		</div>
+		<!-- -->
+
+		<!-- ./Features-part-two-->
+
+		<!-- ./Features-part-two-->
+
+
+		<!-- 
+			=============================================
+				Fancy banner
+			============================================== 
+			-->
+		<div class="fancy-short-banner-three position-relative mt-160 lg-mt-80 pt-100 text-left" 
+			style="background: black; text-align: left;margin-top: 0;">
+			<div class="container">
+				<div class="bg-wrapper">
+					<div class="row align-items-center">
+						<div class="col-lg-12 m-auto">
+							<div class="title-style-one white-vr mb-30">
+								<h2 class="main-title" style="font-size:26px;">Rezlytix is a one stop shop for Oil & Gas
+									companies.
+									<br />Our AI super resolves seismic data to enable reservoir intelligence,
+									<br />bringing alive the subsurface for you - real-time, high resolution &
+									actionable.
+								</h2>
+							</div> <!-- /.title-style-one -->
+							<a href="demo.php" class="btn-one ripple-btn mt-20 lg-mt-20"
+								style="text-transform: none;">Get in Touch</a>
+						</div>
+					</div>
+				</div> <!-- /.bg-wrapper -->
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-short-banner-three -->
+
+		<!-- ./Fancy Banner-->
+	</div>
+
+	<!-- 	
+	=============================================
+				Footer
+	============================================== 
+	-->
+
+	<div class="footer-style-two theme-basic-footer">
+		<div class="overlay" style="border-radius: 1rem; opacity: 0.3;"></div>
+		<div class="container" style="z-index: 100;">
+			<div class="inner-wrapper">
+				<div class="row">
+					<div class="col-lg-3 footer-intro mb-40">
+						<div class="logo"><a href="index.html"><img src="images/logo/rezlytix logo_white.png" alt=""
+									width="200" style="margin-top:-38px;margin-left: -8px;"></a></div>
+						
+						<ul class="d-flex social-icon style-none">
+							
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+						<h5 class="footer-title">Links</h5>
+						<ul class="footer-nav-link style-none">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="service.html">Deep Learning Products</a></li>
+							<li><a href="about-us.html">About us</a></li>
+							<li><a href="contact-us.php">Contact Us</a></li>
+						</ul>
+					</div>
+					<!-- <div class="col-xl-2 col-md-3 col-sm-6 mb-30">
+								<h5 class="footer-title">Legal</h5>
+								<ul class="footer-nav-link style-none">
+									<li><a href="faq.html">Terms of use</a></li>
+									<li><a href="faq.html">Terms & conditions</a></li>
+									<li><a href="faq.html">Privacy policy</a></li>
+									<li><a href="faq.html">Cookie policy</a></li>
+								</ul>
+							</div> -->
+					<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+						<div class="newsletter ps-xl-5">
+							<h5 class="footer-title">Address </h5>
+							<p id="footer-text-2">2nd Floor, 39, Suite 425, NGEF Lane Indiranagar
+Bengaluru(Bangalore) Urban, Karnataka, 560038</p>
+						</div> <!-- /.newsletter -->
+
+						
+					</div>
+
+					<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+						<div class="newsletter ps-xl-5">
+							<h5 class="footer-title">Email</h5>
+							<p id="footer-text-1">info@rezlytix.com</p>
+						</div> <!-- /.newsletter -->
+
+					</div>
+				</div>
+
+				<div class="bottom-footer">
+					<div class="d-lg-flex justify-content-between align-items-center">
+						<ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
+							<!-- <li><a href="faq.html">Privacy &amp; Terms.</a></li>
+									<li><a href="faq.html">FAQ</a></li> -->
+						
+						</ul>
+						<p class="copyright text-center order-lg-0 pb-15" id="footer-text">Copyright @2022 Rezlytix inc.</p>
+					</div>
+				</div>
+			</div> <!-- /.inner-wrapper -->
+		</div>
+	</div> <!-- /.footer-style-two -->
+
+
+	<button class="scroll-top" style="background-color:#029ddf">
+		<i class="bi bi-arrow-up-short"></i>
+	</button>
+
+
+
+
+	<!-- Optional JavaScript _____________________________  -->
+
+	<!-- jQuery first, then Bootstrap JS -->
+	<!-- jQuery -->
+	<script src="vendor/jquery.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<!-- AOS js -->
+	<script src="vendor/aos-next/dist/aos.js"></script>
+	<!-- Slick Slider -->
+	<script src="vendor/slick/slick.min.js"></script>
+	<!-- js Counter -->
+	<script src="vendor/jquery.counterup.min.js"></script>
+	<script src="vendor/jquery.waypoints.min.js"></script>
+	<!-- Fancybox -->
+	<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+	<!-- Progress Bar js -->
+	<script src="vendor/skills-master/jquery.skills.js"></script>
+
+	<!-- Theme js -->
+	<script src="js/theme.js"></script>
+
+	<script>
+		
+		//For slowing down the video
+		document.querySelector('video').playbackRate = 0.5;
+	</script>
+	</div> <!-- /.main-page-wrapper -->
+	
+		
+</body>
+
+</html>
