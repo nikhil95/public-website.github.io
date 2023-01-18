@@ -42,12 +42,101 @@
 
 @import url('https://fonts.googleapis.com');
 @import url('https://fonts.gstatic.com');
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
 
 *{
-  font-family: 'Lexend', sans-serif !important;
+  font-family: 'Roboto', sans-serif !important;
     
   }
+  p{
+    line-height: 1.2em !important;
+    font-size:18px;
+    font-weight: 400;
+      }
+      h2{
+        font-weight: 400 !important;
+       // letter-spacing: 1.1px;
+       
+        
+       
+      }
+      .btn-one{
+        font-weight: 500 !important;
+      }
+      h3{
+        //letter-spacing: 1.1px;
+      }
+      li{
+        font-weight: 300;
+        color: #0a0a0a;
+        
+      }
+
+      .callout1{
+        width: 100%;
+        height: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        margin: auto;
+        background-color: #130f40;
+        display: flex;
+align-items: center;
+justify-content: center;
+    }
+    .callout1_conatiner{
+        width: 70%;
+        height: auto;
+        vertical-align: middle;
+       color: #fff;
+       //border: 1px solid #fff;
+       
+    }
+    .more-btn{
+        background-color: #fff;
+        color: #382e2e;
+        padding: 2px 16px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        border-radius: 20px;
+        text-decoration: none;
+        letter-spacing: 1.1;
+        margin-top: 10px;
+    }
+    .more-btn1{
+        background-color: #130f40;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        border-radius: 30px;
+        text-decoration: none;
+        letter-spacing: 1.1;
+        
+        margin-top: 10px;
+    }
+    .more-btn2{
+        background-color: #fff;
+        color: #382e2e;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        border-radius: 30px;
+        text-decoration: none;
+        letter-spacing: 1.1;
+        
+        margin-top: 10px;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: rgb(184, 181, 181);
+        opacity: 1; /* Firefox */
+        font-size: 15px;
+       
+        padding-left: 15px;
+        }
 /*========================================================================================
 
 *************************** Start Styling Your theme from here ***************************
@@ -187,8 +276,8 @@ body {
 }
 .h1,h1,.h2,h2,.h3,h3,.h4,h4,.h5,h5,.h6,h6 {color: var(--heading); font-weight: normal;}
 .h1,h1 {font-size: 80px;}
-.h2,h2 {font-size: 52px;}
-.h3,h3 {font-size: 36px;}
+.h2,h2 {font-size: 42px;}
+.h3,h3 {font-size: 32px;}
 .h4,h4 {font-size: 24px;}
 .h5,h5 {font-size: 24px; font-family: 'Merriweather', serif; font-weight: 600;}
 .h6,h6 {font-size: 20px; font-family: 'gorditamedium';}
