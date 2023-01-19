@@ -48,6 +48,7 @@
   font-family: 'Roboto', sans-serif !important;
     
   }
+
   p{
     line-height: 1.2em !important;
     font-size:18px;
@@ -103,6 +104,10 @@ justify-content: center;
         text-decoration: none;
         letter-spacing: 1.1;
         margin-top: 10px;
+    }
+    .more-btn:hover,.more-btn1:hover,.more-btn2:hover{
+      background-color: #000F5C;
+      color: #fff;
     }
     .more-btn1{
         background-color: #130f40;
@@ -276,9 +281,9 @@ body {
 }
 .h1,h1,.h2,h2,.h3,h3,.h4,h4,.h5,h5,.h6,h6 {color: var(--heading); font-weight: normal;}
 .h1,h1 {font-size: 80px;}
-.h2,h2 {font-size: 42px;}
-.h3,h3 {font-size: 32px;}
-.h4,h4 {font-size: 24px;}
+.h2,h2 {font-size: 54px;}
+.h3,h3 {font-size: 22px;color: rgb(0 0 0 / 60%);}
+.h4,h4 {font-size: 28px;}
 .h5,h5 {font-size: 24px; font-family: 'Merriweather', serif; font-weight: 600;}
 .h6,h6 {font-size: 20px; font-family: 'gorditamedium';}
 ::-webkit-input-placeholder {color: rgba(0, 0, 0, 0.6);}
