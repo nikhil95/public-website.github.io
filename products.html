@@ -1,0 +1,1556 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="msapplication-TitleImage" content="images/assets/ogg.png">
+		<meta name="keywords" content="Data Science, Analytics, Data, sass, software company">
+		<meta name="description" content="Rezlytix">
+      	<meta property="og:site_name" content="Rezlytix">
+      	<meta property="og:url" content="https://www.rezlytix.com/">
+      	<meta property="og:type" content="website">
+      	<meta property="og:title" content="Rezlytix">
+		<meta name='og:image' content='images/assets/ogg.png'>
+		<!-- For IE -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- For Resposive Device -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- For Window Tab Color -->
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#913BFF">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#913BFF">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#913BFF">
+		<title>Our Products</title>
+		<!-- Favicon -->
+		<link rel="icon" type="image/png" sizes="56x56" href="images/logo/rezlytix_icon.png">
+		<!-- Main style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<!-- responsive style sheet -->
+		<link rel="stylesheet" type="text/css" href="css/responsive.css" media="all">
+
+		<!-- Fix Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="vendor/html5shiv.js"></script>
+			<script src="vendor/respond.js"></script>
+		<![endif]-->
+		<style>
+			.dropbtn {
+			 // background-color: #04AA6D;
+			  color: white;
+			  //padding: 16px;
+			  //font-size: 16px;
+			  border: none;
+			  margin-top:5px;
+			}
+			
+			.dropdown {
+			  position: relative;
+			  display: inline-block;
+			}
+			
+			.dropdown-content {
+			  display: none;
+			  position: absolute;
+			  background-color: #f1f1f1;
+			  min-width: 160px;
+			  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			  z-index: 1;
+			}
+			
+			.dropdown-content a {
+			  color: black;
+			  padding: 6px 10px;
+			  text-decoration: none;
+			  display: block;
+			}
+			
+			.dropdown-content a:hover {background-color: #ddd;}
+			
+			.dropdown:hover .dropdown-content {display: block;}
+			
+			.dropdown:hover .dropbtn {color: #029ddf;}
+			</style>
+		<style type="text/css">
+		::-webkit-scrollbar-thumb {
+    background: #029ddf !important;
+   
+}
+		
+		* {
+  box-sizing: border-box;
+}
+	.mt-250 {
+   margin-top:0;
+}	
+p{
+	line-height: 1.2em !important;
+	font-size:18px !important;
+		}
+
+.wrapper {
+  //display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top:0px;
+}
+
+.card {
+	margin-bottom: 40px;
+	margin-right: 20px;
+  width: 31%;
+  float: left;
+  height: 250px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  //align-items: flex-center;
+  border: none !important;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: 0.4s ease-out;
+  //box-shadow: 5px 5px #4a4848f7;
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  margin-top: -15px;
+
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 20px !important;
+  margin-top: 8px;
+  border: none !important;
+  text-align: left;
+
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: dodgerblue;
+  color: white;
+}
+.info{
+	padding-top: 13px;
+	
+		}
+.fancy-feature-six{
+	
+		}
+		@media only screen and (max-width: 1200px) {
+  .card{
+    width: 100%;
+  }
+}
+
+.text {
+	
+	position: relative;
+	
+	
+}
+.text h5{
+	color: white !important;
+	font-weight: 100;
+}
+.card p{
+	font-weight: 100;
+}
+.para-text{
+	font-size: 22px !important;
+}
+.fancy-feature-five li{
+	color: #fff !important;
+}
+.fancy-feature-five ul{
+	//margin-top: 50px;
+}
+.custom-list-bullet{
+	//position: relative;
+	//top: 2px !important;
+
+}
+.service-list{
+	font-size: 17px !important;
+}
+
+@media only screen and (max-width: 800px) {
+  .t1{
+	width: 100% !important;
+	padding-left: 10px !important;
+}
+#demo-btn{
+	width: 230px;
+	margin-top: 50px !important;
+	margin-left: 10px;
+}
+.title-style-one p,.title-style-one h4{
+	margin-left: 0px !important;
+}
+
+}
+
+@media only screen and (max-width: 550px) {
+ .black-line{
+	height: 370px !important;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+ .buildai-icon{
+ 	float: right !important;
+ }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+.architecture-img{
+    height:170px !important;
+}
+}
+
+
+#product-card{
+    margin-top: -50px !important;
+}
+
+#call-to-action a:hover {
+  color: #fff !important;
+}
+
+.known-more-btn:hover {
+    background-color: #002b87 !important;
+    transition: 0.3s;
+}
+
+
+	</style>	
+	</head>
+
+	<body >
+		<div class="main-page-wrapper">
+			<!-- ===================================================
+				Loading Transition
+			==================================================== -->
+			<section>
+				<div id="preloader">
+					<div id="ctn-preloader" class="ctn-preloader">
+						<div class="animation-preloader">
+							<div class="icon"><img src="images/logo/rezlytix_icon.png" alt="" class="m-auto d-block" width="38"></div>
+							<div class="txt-loading mt-2">
+								<span data-text-preloader="R" class="letters-loading">
+									R
+								</span>
+								<span data-text-preloader="E" class="letters-loading">
+									E
+								</span>
+								<span data-text-preloader="Z" class="letters-loading">
+									Z
+								</span>
+								<span data-text-preloader="L" class="letters-loading">
+									L
+								</span>
+								<span data-text-preloader="Y" class="letters-loading">
+									Y
+								</span>
+								<span data-text-preloader="T" class="letters-loading">
+									T
+								</span>
+								<span data-text-preloader="I" class="letters-loading">
+									I
+								</span>
+								<span data-text-preloader="X" class="letters-loading">
+									X
+								</span>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
+
+
+
+			
+
+			<!-- 
+			=============================================
+				Theme Main Menu
+			============================================== 
+			-->
+			<header class="theme-main-menu sticky-menu theme-menu-two">
+				<div class="inner-content">
+					<div class="container d-flex align-items-center justify-content-between">
+						<div class="logo order-lg-0 navbar-logo"><a href="index.html" class="d-block"><img
+									src="images/logo/rezlytix logo_white.png" alt="" width="200"></a></div>
+						<div class="d-flex flex-row align-items-center">
+							<nav class="navbar navbar-expand-lg order-lg-2 mr-2">
+								<button class="navbar-toggler d-block d-lg-none" type="button" data-bs-toggle="collapse"
+									data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+									aria-label="Toggle navigation">
+									<span></span>
+								</button>
+								<div class="collapse navbar-collapse" id="navbarNav">
+									<ul class="navbar-nav">
+										<li class="d-block d-lg-none">
+											<div class="logo"><a href="index.html"><img
+														src="images/logo/rezlytix logo-01.png" alt="" width="160"></a></div>
+										</li>
+										
+										<li class="nav-item">
+											<a class="nav-link active dropdown" href="index.html" role="button">Home</a>
+										</li>
+										
+									   
+									
+										<li class="nav-item">
+											
+											<a class="nav-link" href="technology.html" role="button">Technology</a>
+										</li>
+										<li class="nav-item active dropdown">
+											<a class="nav-link" href="products.html" role="button" data-bs-toggle="dropdown"
+												data-bs-auto-close="outside" aria-expanded="false">Products</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="solution.html" role="button">Solutions</a>
+										</li>
+										
+										
+										
+										<div class="dropdown">
+											<button class="dropbtn nav-link">About Us</button>
+											<div class="dropdown-content">
+												<a href="company.html">Company</a>
+												<a href="team.html">Our Team</a>
+											 
+											</div>
+										  </div>
+									   
+										
+									</ul>
+									<!-- Mobile Content -->
+									<div class="mobile-content d-block d-lg-none">
+										<div class="d-flex flex-column align-items-center justify-content-center mt-70">
+											<a href="demo.php" class="get-in-touch-btn-2">Get in Touch</a>
+										</div>
+									</div> <!-- /.mobile-content -->
+								</div>
+							</nav>
+							<a href="demo.php" class="get-in-touch-btn d-none d-lg-block order-lg-3">Get in Touch</a>
+						</div>
+					</div>
+				</div> <!-- /.inner-content -->
+			</header> <!-- /.theme-main-menu -->
+
+
+			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-ride="carousel">
+			
+				<div class="carousel-inner">
+					<div class="overlay"></div>
+					<video autoplay muted loop id="myVideo" playsinline width="100%" height="100%">
+						<source src="./images/bg2.mp4" type="video/mp4">
+						
+					</video>
+	
+					
+					<div class="carousel-item active">
+						<div class="hero-banner-two hero-banner-two-bg2">
+							<div class="bg-wrapper">
+								<div class="container mb-80">
+									<div class="row">
+										<div class="col-xl-12 col-md-12">
+											<h1 class="hero-heading">More than what meets the eye</h1>
+											<h1 class="hero-subheading-2">as the subsurface comes alive</h1>
+											<!-- <p class="text-xl pt-25 pb-40 lg-pb-20 sm-pt-10 hero-subheading hero-subheading-2">As the
+												subsurface comes alive</p> -->
+											<ul class="style-none button-group d-sm-flex align-items-center">
+												<li class="me-4 mt-80">
+													<a href="#page-section1" style="width: 50px;height: 60px;">
+														<div class="container_box" >
+															<div class="chevron" style="width: 50px;"></div>
+															<div class="chevron" style="width: 50px;"> </div>
+															<div class="chevron" style="width: 50px;"></div>
+														   
+														  </div>
+														  </a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="notification_text" style="margin-top: 50px;">
+										<img src="./images/india_energy_week.png" style="width: 408px;height: 101px;"/>
+										<h3 style="color: #fff;margin-top: 30px;font-size: 20px;">We will be showcasing our technology at <a href="https://www.indiaenergyweek.com/" target="_blank" style="cursor: pointer;color: #029ddf;text-decoration: underline;">India Energy Week </a> between 6 - 8 February, 2023.
+											Please visit us at our exhibit <b style="color:#029ddf" >(5E93) </b>to learn more about our exciting offerings.
+											</h3>
+										</div>
+								</div> <!-- /.container -->
+							</div> <!-- /.bg-wrapper -->
+						</div>
+					</div>
+					
+					
+				</div>
+				
+			</div>
+
+			<div class="fancy-feature-nineteen position-relative pt-130 pb-130 lg-pt-80" style="content-visibility: auto;" id="page-section1">
+				<div class="container">
+					<div class="row justify-content-center" >
+						<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+							<h2 style="text-align: center;">Lorem Ipsum</h2>
+							<h3 style="text-align: center;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus pariatur voluptates eligendi nihil. Ullam blanditiis sapiente quos consectetur assumenda sint nisi veniam omnis cupiditate dignissimos odio, eligendi dolor voluptatum sit?</h3>
+							<div style="width: 50%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+						
+							
+							
+						</div>
+					
+						
+						<br>
+						<div style="margin-top: 20px;"></div>
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding: 20px;" >
+							<iframe width="90%" height="370" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="margin: auto;display:flex;">
+							</iframe>
+							
+						</div>
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding: 20px;" >
+							<iframe width="90%" height="370" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="margin: auto;display:flex;">
+							</iframe>
+							
+						</div>
+						
+						
+						
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+			<br>
+			<br>
+			
+
+			
+		
+			<!-- 
+			=============================================
+				Feature Section Twenty Four
+			============================================== 
+			-->
+			<div class="fancy-feature-twentyFive position-relative mt-120 lg-mt-130 pt-60 pb-130"  id="product-card">
+				<video autoplay muted loop id="myVideo" playsinline width="100%" height="100%">
+					<source src="./images/assets/vidBg4-2.mp4" type="video/mp4">
+				</video>
+				<div class="container">
+					<div class="title-style-one">
+						<!-- <div class="sc-title-three">Services</div> -->
+						<br>
+						<h2 class="main-title" style="color:#fff">Our Deep Learning products</h2>
+						<br>
+					</div> <!-- /.title-style-one -->
+					<div class="row">
+						<div class="col-xl-3 col-sm-6 lg-mt-20 " data-aos="fade-up" >
+							<div style="background-color: #fff;border-radius: 15px;">
+							<a href="#storm-section">
+							<div class="block-style-ten color-two tran3s mt-30">
+								<div class="icon d-flex align-items-end"><img src="images/logo/Storm.png" alt="" style="width:90px;max-height: 80px;">
+									<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Storm 2.0</h6>
+								</div>
+							   
+								<p class="mt-20 storm_text" style="font-size: 18px;" id="storm-text">Super Resolution Seismic
+									
+								</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="100">
+							<div style="background-color: #fff;border-radius: 15px;">
+							<a href="#strike-section">
+							<div class="block-style-ten color-two tran3s mt-30">
+								<div class="icon d-flex align-items-end"><img src="images/logo/Strike.png" alt="" style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Strike</h6>
+							</div>
+								<p class="mt-20 storm_text" >Super Resolution Inversions
+								
+								</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+						</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="100" >
+							<div style="background-color: #fff;border-radius: 15px;" >
+							<a href="#wedge-section">
+							<div class="block-style-ten color-two tran3s mt-30">
+								<div class="icon d-flex align-items-end"><img src="images/logo/Wedge.png" alt="" style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Wedge</h6>
+							</div>
+								<p class="mt-20 wedge_text">Super Resolution Spectral Decompositions</p>
+							</div> <!-- /.block-style-ten -->
+						 </a>
+						</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="200">
+							<div style="background-color: #fff;border-radius: 15px;">
+							<a href="#prolytix-section">
+							<div class="block-style-ten color-two tran3s mt-30" >
+								<div class="icon d-flex align-items-end"><img src="images/logo/Prolytix1.png" alt="" style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Prolytix</h6>
+							</div>
+								<p class="mt-20 prolytix_text"> Production Analytics & Forecasting</p>
+							</div> <!-- /.block-style-ten -->
+						</a>
+						</div>
+						</div>
+					   
+					</div>
+	
+					<div class="row product_second_row">
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="300">
+							<div style="background-color: #fff;border-radius: 15px;">
+							<a href="#">
+							<div class="block-style-ten color-two tran3s mt-30">
+								<div class="icon d-flex align-items-end"><img src="images/logo/LogAI.png" alt="" style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Log AI</h6>
+							</div>
+								<p class="mt-20 storm_text">Recover Missing Log Information</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+						</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="200">
+							<div style="background-color: #fff;border-radius: 15px;">
+								<a href="#faultai-section">
+							<div class="block-style-ten color-two tran3s mt-30">
+							  
+								<div class="icon d-flex align-items-end"><img src="images/logo/Fault_AI_colour.png" alt="" style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Fault AI</h6>
+							</div>
+								<p class="mt-20 fault_text">Accurate Fault Models</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="300">
+							<div style="background-color: #fff;border-radius: 15px;">
+								<a href="#stratai-section">
+							<div class="block-style-ten color-two tran3s mt-30 ribbon-wrapper">
+							   
+								<div class="icon d-flex align-items-end"><img src="images/logo/Strat_AI_colour.png" alt="" style="width:90px;max-height: 80px;" >
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Strat AI</h6>
+							</div>
+								<p class="mt-20 storm_text">High Precision Horizon Cubes</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+							</div>
+						</div>
+						<div class="col-xl-3 col-sm-6 lg-mt-20" data-aos="fade-up" data-aos-delay="300">
+							<div style="background-color: #fff;border-radius: 15px;">
+								<a href="#">
+							<div class="block-style-ten color-two tran3s mt-30 ribbon-wrapper">
+							   
+								<div class="icon d-flex align-items-end"><img src="images/icon/clock1.jpg" alt=""  style="width:90px;max-height: 80px;">
+								<h6 class="mt-20" style="margin-left: 10px;font-size: 26px;position: relative;top: -10px;">Enhance AI</h6>
+							</div>
+								<p class="mt-20 storm_text">Improve Structural Continuity</p>
+							</div> <!-- /.block-style-ten -->
+							</a>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="flex text-center items-center mt-40">
+						<a href="#" class="btn-one">Request a demo <i
+								class="fas fa-chevron-right"></i></a>
+					</div> -->
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-twentyFive -->
+	
+
+
+			<!-- 
+			=============================================
+				Feature Section Twelve
+			============================================== 
+			-->
+			<!-- <div class="fancy-feature-twelve mt-200 pb-50 lg-mt-120">
+				<div class="container">
+					<div class="row align-items-center align-items-xl-start">
+						<div class="col-xl-5 col-md-6 order-md-last">
+							<div class="block-style-nine color-two">
+								<div class="title-style-one pb-10" data-aos="fade-up">
+									<h2 class="main-title">Why is <span style="color:#002B87; text-decoration: none !important;">Rez</span><span style="color:#029DDF; text-decoration: none !important;">lytix</span> right for you?</h2>
+								</div> 
+								<ul class="style-none list-item list-item-3">
+									<li data-aos="fade-up">AI/ML simplified</li>
+									<li data-aos="fade-up" data-aos-delay="100">Cloud Scalability</li>
+									<li data-aos="fade-up" data-aos-delay="200">Proprietary algorithms</li>
+									<li data-aos="fade-up" data-aos-delay="300">Maximizing value from existing data</li>
+									<li data-aos="fade-up" data-aos-delay="300">Bespoke application development</li>
+									<li data-aos="fade-up" data-aos-delay="300">Integrating existing scientific code</li>
+								</ul>
+							</div> 
+						</div>
+					</div>
+				</div>
+				
+			</div> -->
+			<!--
+			=====================================================
+				Products section
+			=====================================================
+			-->
+			<div class="fancy-feature-nineteen position-relative pt-130 lg-pt-40" style="content-visibility: auto;padding-bottom: 80px;" id="strike-section">
+				<div class="container">
+					<div class="row justify-content-center" style="">
+						<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+							<h2 style="text-align: center;">Enhance AI</h2>
+							
+							<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+								<br>
+						</div>
+						
+					
+						
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding: 30px;padding-top: 0;" >
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+								<p style="text-align: center;">Before</p>
+								<img src="images/strike_before.png" style="width: 100%;height: 240px;">
+								
+							</div>
+							
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+								<p style="text-align: center;">After</p>
+								<img src="images/strike_after.png" style="width: 100%;height: 240px;">
+							</div>
+							<!-- <h3 class="main-title">Why do we use it?</h3> -->
+							
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-pt-30" style="padding-left: 35px;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >	
+							
+							<h4>Improve Structural Continuity & Sharpness
+							</h4>	
+							
+						</div>
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+							<h3 style="font-size: 16px;">Improvement over limitations of conventual Fourier transform based spectral decomposition providing sharper resolution of low frequency anomalies.</h3>
+							<br>
+						</div>
+						
+						<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+							
+							<img src="images/logo/Strike.png" style="width: 120px;height:110px;"/>
+						</div>
+						<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10 " style="height: auto;float: left;" >
+							<img src="images/wedge_list.png"/>
+							<br>
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+							<h4 style="font-size: 22px;text-align: center;">Superior temporal resolution at low frequencies compared to any industry standard algorithms.
+
+							</h4>
+						</div>
+						
+						<br>
+						
+
+						<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">Ready in few <br>days </p>
+						</div>
+						<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">Matching high 
+<br>resolution impedence dataset.
+							</p>
+						</div>
+						
+					</div>
+					
+						
+						
+						
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+
+
+			<div class="fancy-feature-nineteen position-relative pt-130 lg-pt-80" style="content-visibility: auto;padding-bottom: 80px;" id="storm-section">
+				<div class="container">
+					<div class="row justify-content-center" style="">
+						<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+						<h2 style="text-align: center;">Storm 2.0</h2>
+						
+						<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+							<br>
+					</div>
+						
+						
+						
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding-top: 10px;" >
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >	
+							
+								
+								<h4>
+									Super Resolution Imaging
+								</h4>
+								
+							</div>
+							<!-- <h3 class="main-title">Why do we use it?</h3> -->
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+								<h3 style="font-size: 16px;">Free from amplitude and phase distortions. Well-guided structurally constrained resolution enhancement with improved signal-to-noise ratio.</h3>
+								<br>
+							</div>
+							
+							<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+								
+								<img src="images/logo/Storm.png" style="width: 120px;height:110px;"/>
+							</div>
+							<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+								<img src="images/storm_list.png"/>
+								<br>
+							</div>
+							
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+								<h4 style="font-size: 22px;text-align: center;">
+									Resolves uninterpretable geological details in <br>legacy seismic datasets.
+								</h4>
+							</div>
+							
+							<br>
+							
+
+							<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">Ready in 4-6<br> weeks </p>
+							</div>
+							<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">Costs a fraction of <br> re-acquiring high <br>resolution data.
+								</p>
+							</div>
+							<!--
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="height: auto;display: flex;justify-content: center;padding-top: 20px;" >
+								<a class="known-more-btn" href="#" style="background: #002b87;color:#fff;width: 40%;margin: auto;padding: 5px;border-radius: 7px;text-align: center;cursor: pointer;margin-top: 5px;">Know More</a>
+							</div>
+						-->
+							
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding: 30px;padding-top: 0;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+							<p style="text-align: center;">Before</p>
+							<img src="images/storm1.png" style="width: 100%;height: 240px;">
+							
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+							<p style="text-align: center;">After</p>
+							<img src="images/storm2.png" style="width: 100%;height: 240px;">
+						</div>
+						
+					</div>
+					
+						
+						
+						
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+
+			<!---Call To Action-->
+		
+			
+		
+			<br>
+			<div class="fancy-feature-nineteen position-relative"  style="opacity: 0.9;padding-bottom: 80px;padding-top: 80px;background: url(images/bg_callout2.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+				<div class="container" style="">
+					<div class="row justify-content-center" >
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 callout_1 " style="" >
+							<div class="callout1" style="padding: 0;background-color: transparent;display: block;">
+								<div class="callout1_conatiner" style="width: 100%;" >
+									<iframe width="100%" height="370" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="width:90%;margin: auto;display: flex;">
+									</iframe>
+								  
+									
+								   
+								</div>
+							</div>
+						</div>
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding-left: 20px;" >
+							<div class="callout1" style="padding-bottom: 0;background-color: transparent;">
+								<div class="callout1_conatiner" style="width: 100%;" >
+									<h2 style="text-align: left;font-size: 28px;font-weight: 300;letter-spacing: 1.2;color: #fff;z-index: 10000;">
+										Reveal the true potential of your data in super-resolution.<br>
+										
+										<span style="position: relative;top: 13px;" > Book a discussion to organize a pilot study.</span>
+									</h2>
+										<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="height: auto;display: flex;justify-content: left;" >
+											<a class="more-btn2" href="demo.php" style="padding: 3px;margin:auro;margin-top: 40px;">Book a Demo</a>
+										
+											</div>
+										
+										
+									
+								  
+									
+								   
+								</div>
+							</div>
+						  
+						</div>
+					   
+			
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+		<!-- -->
+			
+			<div class="fancy-feature-nineteen position-relative pt-130 lg-pt-40" style="content-visibility: auto;padding-bottom: 80px;" id="strike-section">
+				<div class="container">
+					<div class="row justify-content-center" style="">
+						<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+							<h2 style="text-align: center;">Strike</h2>
+							
+							<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+								<br>
+						</div>
+						
+					
+						
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding: 30px;padding-top: 0;" >
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+								<p style="text-align: center;">Before</p>
+								<img src="images/strike_before.png" style="width: 100%;height: 240px;">
+								
+							</div>
+							
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+								<p style="text-align: center;">After</p>
+								<img src="images/strike_after.png" style="width: 100%;height: 240px;">
+							</div>
+							<!-- <h3 class="main-title">Why do we use it?</h3> -->
+							
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-pt-30" style="padding-left: 35px;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 " style="" >	
+							
+							<h4>Super Resolution Inversions
+							</h4>	
+							
+						</div>
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+							<h3 style="font-size: 16px;">An unbiased, wavelet and phase stationarity assumption-free deep learning inversion architecture that generates realistic geologic models away from the wells.
+</h3>
+							<br>
+						</div>
+						
+						<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+							
+							<img src="images/logo/Strike.png" style="width: 120px;height:110px;"/>
+						</div>
+						<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+							<img src="images/strike_list.png"/>
+							<br>
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+							<h4 style="font-size: 22px;text-align: center;">Resolve thin beds and create high resolution static rock property models.
+
+							</h4>
+						</div>
+						
+						<br>
+						
+
+						<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">Ready in 4-6 <br>weeks </p>
+						</div>
+						<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">Matching high 
+<br>resolution impedence dataset.
+							</p>
+						</div>
+						
+					</div>
+					
+						
+						
+						
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+
+				<!---Call To Action-->
+		
+				
+
+				<br>
+			
+		
+		<!-- -->
+
+		<div class="fancy-feature-nineteen position-relative pt-130 lg-pt-80" style="content-visibility: auto;padding-bottom: 80px;" id="wedge-section">
+			<div class="container">
+				<div class="row justify-content-center" style="">
+					<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+					<h2 style="text-align: center;">Wedge</h2>
+					
+					<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+						<br>
+				</div>
+					
+					
+					
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding-top: 10px;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >	
+						
+							
+							<h4>
+								Super Resolution Imaging & Decompositions
+
+							</h4>
+							
+						</div>
+						<!-- <h3 class="main-title">Why do we use it?</h3> -->
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+							<h3 style="font-size: 16px;">Improvement over limitations of conventual Fourier transform based spectral decomposition providing sharper resolution of low frequency anomalies.</h3>
+							<br>
+						</div>
+						
+						<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;" >
+							
+							<img src="images/logo/Wedge.png" style="width: 120px;height:110px;"/>
+						</div>
+						<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+							<img src="images/wedge_list.png"/>
+							<br>
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+							<h4 style="font-size: 22px;text-align: center;">Superior temporal resolution at low frequencies compared to any industry standard algorithms.
+							</h4>
+						</div>
+						
+						
+						<br>
+						
+
+						<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">Ready in 4-6 <br>weeks </p>
+						</div>
+						<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+							
+							<p style="margin-top: 5px;text-align: center;">costs a fraction of<br> re-acquiring high resolution data.
+							</p>
+						</div>
+						<!--
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="height: auto;display: flex;justify-content: center;padding-top: 20px;" >
+							<a class="known-more-btn" href="#" style="background: #002b87;color:#fff;width: 40%;margin: auto;padding: 5px;border-radius: 7px;text-align: center;cursor: pointer;margin-top: 5px;">Know More</a>
+						</div>
+					-->
+						
+				</div>
+				<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding: 30px;padding-top: 0;" >
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+						<p style="text-align: center;">Before</p>
+						<img src="images/storm1.png" style="width: 100%;height: 240px;">
+						
+					</div>
+					
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+						<p style="text-align: center;">After</p>
+						<img src="images/storm2.png" style="width: 100%;height: 240px;">
+					</div>
+					
+				</div>
+				
+					
+					
+					
+					
+				</div>
+				
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+
+		<!---Call To Action-->
+		
+		<br>
+		
+		<!-- -->
+
+			
+				<!---Call To Action-->
+		
+				<div class="fancy-feature-nineteen position-relative"  style="opacity: 0.9;padding-bottom: 80px;padding-top: 80px;background: url(images/bg_callout31.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+					<div class="container" style="">
+						<div class="row justify-content-center" >
+							<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 callout_1 " style="" >
+								<div class="callout1" style="padding: 0;background-color: transparent;display: block;">
+									<div class="callout1_conatiner" style="width: 100%;" >
+										<iframe width="100%" height="370" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="width:90%;margin: auto;display: flex;">
+										</iframe>
+									  
+										
+									   
+									</div>
+								</div>
+							</div>
+							 <div class="col-xxl- col-lg-6 col-md-12 col-sm-12 callout_1" style="padding-left: 20px;" >
+								<div class="callout1" style="padding-bottom: 0;background-color: transparent;display: block;">
+									<div class="callout1_conatiner" style="width: 100%;" >
+										<h2 style="font-size: 32px;font-weight: 300;letter-spacing: 1.2;color: #fff;z-index: 10000;">Bring the power of AI to resolve thin beds and complex channel pathways.</h2>
+										
+									   <a class="more-btn" href="#" style="margin-top: 20px;width: 30%;border-radius: 30px;float: left;">Learn more</a>
+										
+									  
+										
+									   
+									</div>
+								</div>
+							</div>
+
+							
+							
+						</div>
+						
+					</div> <!-- /.container -->
+				</div> <!-- /.fancy-feature-nineteen -->
+		<!-- -->
+		<div class="fancy-feature-nineteen position-relative pt-80 lg-pt-40" style="content-visibility: auto;padding-bottom: 80px;" id="faultai-section">
+			<div class="container">
+				<div class="row justify-content-center" style="">
+					<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+						<h2 style="text-align: center;">Fault AI</h2>
+						
+						<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+							<br>
+					</div>
+				   
+					
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 " style="padding: 30px;padding-top: 0;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+							<p style="text-align: center;">Before</p>
+							<img src="images/faultai_before.png" style="width: 100%;height: 240px;">
+							
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+							<p style="text-align: center;">After</p>
+							<img src="images/faultai_after.png" style="width: 100%;height: 240px;">
+						</div>
+						<!-- <h3 class="main-title">Why do we use it?</h3> -->
+						
+				</div>
+				<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding-left: 35px;" >
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 " style="" >	
+						
+						
+						<h4>AI driven 3D fault geometry mapping</h4>	
+						
+					</div>
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+						<h3 style="font-size: 16px;">Detailed & accurate correlation of discontinuities & mapping of fault planes with their genetic relationship.</h3>
+						<br>
+					</div>
+					
+					<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+						
+						<img src="images/logo/Fault.png" style="width: 120px;height:110px;"/>
+					</div>
+					<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+						<img src="images/fault_list.png"/>
+						<br>
+					</div>
+					
+					<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+						<h4 style="font-size: 22px;text-align: center;">Interpret previously unresolved and uninterpretable structural & stratigraphic details with confidence
+						</h4>
+						</div>
+					
+					<br>
+					
+
+					<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+						
+						<p style="margin-top: 5px;text-align: center;">Ready in 4-6 <br>weeks </p>
+					</div>
+					<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+						
+						<p style="margin-top: 5px;text-align: center;">costs a fraction of<br> re-acquiring high resolution data.
+						</p>
+					</div>
+					
+				</div>
+				
+					
+					
+					
+					
+				</div>
+				
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+
+
+
+
+			<div class="fancy-feature-nineteen position-relative pt-80 lg-pt-40" style="content-visibility: auto;padding-bottom: 80px;" id="stratai-section">
+				<div class="container">
+					<div class="row justify-content-center" style="">
+						<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+							<h2 style="text-align: center;">Strat AI</h2>
+							
+							<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+								<br>
+						</div>
+						
+						
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12" style="padding-top: 10px;" >
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >	
+							
+								
+								
+								<h4>AI driven super resolution horizon cube
+								</h4>
+								
+							</div>
+							<!-- <h3 class="main-title">Why do we use it?</h3> -->
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+								<h3 style="font-size: 16px;">Workflow utilizing a combination of unconformity detection, horizon mapping and chrono stratigraphy tracking algorithms running on super resolution inputs. </h3>
+								<br>
+							</div>
+							
+							<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+								
+								<img src="images/logo/Horizon.png" style="width: 120px;height:110px;"/>
+							</div>
+							<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+								<img src="images/strat_list.png"/>
+								<br>
+							</div>
+							
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+								<h4 style="font-size: 22px;text-align: center;">Interpret previously unresolved and uninterpretable structural & stratigraphic details with confidence
+								</h4>
+							</div>
+							
+							
+							<br>
+							
+
+							<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">Reduces interpretation <br>time by days  </p>
+							</div>
+							<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">Generate Full 3D  <br> Relative Geologic time cubes.
+								</p>
+							</div>
+					</div>
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding: 30px;padding-top: 0;" >
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+							<p style="text-align: center;">Before</p>
+							<img src="images/startai_before.png" style="width: 100%;height: 240px;">
+							
+						</div>
+						
+						<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+							<p style="text-align: center;">After</p>
+							<img src="images/startai_after.png" style="width: 100%;height: 240px;">
+						</div>
+						
+					</div>
+					
+						
+						
+						
+						
+					</div>
+					
+				</div> <!-- /.container -->
+			</div> <!-- /.fancy-feature-nineteen -->
+
+				<!---Call To Action-->
+		
+		
+		<!---Call To Action-->
+		
+		<br>
+		<div class="fancy-feature-nineteen position-relative"  style="opacity: 0.9;padding-bottom: 80px;padding-top: 80px;background: url(images/bg_callout2.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+			<div class="container" style="">
+				<div class="row justify-content-center" >
+					<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 callout_1 " style="" >
+						<div class="callout1" style="padding: 0;background-color: transparent;display: block;">
+							<div class="callout1_conatiner" style="width: 100%;" >
+								<iframe width="100%" height="370" src="https://www.youtube.com/embed/tgbNymZ7vqY" style="width:90%;margin: auto;display: flex;">
+								</iframe>
+							  
+								
+							   
+							</div>
+						</div>
+					</div>
+					<div class="col-xxl-6 col-lg-12 col-md-12 col-sm-12" style="" >
+						<div class="callout1" style="padding-bottom: 0;background-color: transparent;">
+							<div class="callout1_conatiner" style="width: 100%;" >
+								<h2 style="text-align: left;font-size: 28px;font-weight: 300;letter-spacing: 1.2;color: #fff;z-index: 10000;">
+									Interpret accurate horizons and complex fault systems like never before.<br>
+									
+									<span style="position: relative;top: 13px;" > Book a discussion to organize a pilot study.</span>
+								</h2>
+									<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="height: auto;display: flex;justify-content: center;" >
+										<a class="more-btn2" href="demo.php" style="padding: 3px;margin:auro;margin-top: 40px;">Book a Demo</a>
+									<a class="more-btn2" href="#" style="padding: 3px;margin:auto;margin-top: 40px;margin-left: 10px;">Learn more</a>
+										</div>
+									
+									
+								
+							  
+								
+							   
+							</div>
+						</div>
+					  
+					</div>
+				   
+		
+					
+				</div>
+				
+			</div> <!-- /.container -->
+		</div> <!-- /.fancy-feature-nineteen -->
+		<!-- -->
+
+			
+		<!-- ./Features-part-two-->
+
+				<!---Call To Action-->
+				<div class="fancy-feature-nineteen position-relative pt-130 lg-pt-40" style="content-visibility: auto;padding-bottom: 80px;" id="prolytix-section">
+					<div class="container">
+						<div class="row justify-content-center" style="">
+							<div class="title-style-one mb-60 lg-mb-30" style="margin-bottom: 30px;">
+								<h2 style="text-align: center;">Prolytix</h2>
+								
+								<div style="width: 30%;height: 3px;background-color: #029ddf;margin: auto;margin-top: 16px;"></div>
+									<br>
+							</div>
+							
+							
+							
+							<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding: 30px;padding-top: 0;" >
+								<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >
+									<p style="text-align: center;">Before</p>
+									<img src="images/prolytix_before.png" style="width: 100%;height: 240px;">
+									
+								</div>
+								
+								<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="margin-top: 10px;" >
+									<p style="text-align: center;">After</p>
+									<img src="images/prolytix_after.png" style="width: 100%;height: 240px;">
+								</div>
+								<!-- <h3 class="main-title">Why do we use it?</h3> -->
+								
+						</div>
+						<div class="col-xxl-6 col-lg-6 col-md-12 col-sm-12 md-mt-30" style="padding-left: 35px;" >
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="" >	
+								
+								
+								<h4>Mature field redevelopment intelligence</h4>
+								
+							</div>
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12"  >
+								<h3 style="font-size: 16px;">AI based integrated modelling to locate hydrocarbon sweet spots and leftover oil & gas in 3D space at mid life & mature stages of field development.
+	</h3>
+								<br>
+							</div>
+							
+							<div class="col-xxl-2 col-lg-12 col-md-12 col-sm-12" style="height: auto;float: left;padding-top: 10px;" >
+								
+								<img src="images/logo/Prolytix1.png" style="width: 120px;height:110px;"/>
+							</div>
+							<div class="col-xxl-10 col-lg-12 col-md-12 col-sm-12 md-pt-10" style="height: auto;float: left;" >
+								<img src="images/prolytix_list.png"/>
+								<br>
+							</div>
+							
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12 md-mt-130">
+								<h4 style="font-size: 22px;text-align: center;">Quantify recoverable hydrocarbon volume and map undiscovered high-productivity zones in 3D
+	
+								</h4>
+							</div>
+							
+							
+							<br>
+							
+	
+							<div class="" style="width:40%;height:100px;background-color: #30336b;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 30px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">Ready in 12 <br>weeks </p>
+							</div>
+							<div class="" style="width:40%;height:100px;background-color: #22a6b3;color: #fff;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;float: left;padding: 20px;margin-left: 40px;" >
+								
+								<p style="margin-top: 5px;text-align: center;">CAPEX savings & production 
+	<br>front ending.
+								</p>
+							</div>
+							
+						</div>
+						
+							
+							
+							
+							
+						</div>
+						
+					</div> <!-- /.container -->
+				</div> <!-- /.fancy-feature-nineteen -->
+	
+				
+
+				<div class="fancy-feature-nineteen position-relative callout_2 mt-60" style="opacity: 0.9;background: url(images/bg_callout1.jpg);background-size: cover;background-repeat: no-repeat;background-position: center;">
+					<div class="container">
+						<div class="row justify-content-center" >
+						   
+							<div class="col-xxl-12 col-lg-12 col-md-12 col-sm-12" style="padding: 0;" >
+								<div class="callout1" style="background-color: transparent;">
+									<div class="callout1_conatiner">
+										<h2 style="text-align: center;font-size: 38px;font-weight: 300;letter-spacing: 1.2;color: #fff;">Book a discussion to take a deep dive </h2>
+										
+										<p style="text-align: center;font-weight: 400;margin-top: 20px;">
+											You have seen what our products can do. Now it’s time for you to expand the horizons of energy exploration with artificial intelligence.
+										<br>
+										<span style="position: relative;top:15px;">Don’t just take our word for it. See the true potential of your data.
+
+										</span>
+										</p>
+										
+										
+										
+										<a class="more-btn" href="#" style="margin-top: 30px;">Book a Demo</a>
+									</div>
+								</div>
+							  
+							</div>
+						  
+							
+							
+							
+						</div>
+						
+					</div> <!-- /.container -->
+				</div> <!-- /.fancy-feature-nineteen -->
+				
+		
+	
+		<!-- -->
+
+
+
+			<!-- 
+			=============================================
+				Fancy Short Banner Three
+			============================================== 
+			-->
+			
+		
+
+			<!--
+			=====================================================
+				Footer
+			=====================================================
+			-->
+			<div class="footer-style-two theme-basic-footer mt-20">
+				<video autoplay muted loop id="myVideo" playsinline width="100%" height="100%">
+					<source src="./images/assets/vidBg4-2.mp4" type="video/mp4">
+					
+				</video>
+				<div class="overlay" style="border-radius: 1rem; opacity: 0.3;"></div>
+				<div class="container" style="z-index: 100;">
+					<div class="inner-wrapper">
+						<div class="row">
+							<div class="col-lg-8 m-auto ">
+								<div class="title-style-one white-vr mb-30">
+									<h2 class="main-title" style="font-size:26px;">Rezlytix is a one stop shop for Oil & Gas
+										companies.
+										<br />Our AI super resolves seismic data to enable reservoir intelligence,
+										<br />bringing alive the subsurface for you - real-time, high resolution &
+										actionable.
+									</h2>
+								</div> <!-- /.title-style-one -->
+								
+							</div>
+							<div class="col-lg-4 m-auto">
+								
+								<a href="demo.php" class="btn-one ripple-btn lg-mt-20 mb-80"
+									style="text-transform: none;">Get in Touch</a>
+									
+							</div>
+							<div style="width: 100%;margin-top: 50px;"></div>
+							<div class="col-lg-3 footer-intro mb-40">
+								<div class="logo">
+									<a href="index.html"><img src="images/logo/rezlytix logo_white.png" alt=""
+											width="200" style="margin-top:-38px;margin-left: -8px;"></a>
+									<br>		
+										
+											<a href="https://www.youtube.com/channel/UC9sJ2HaYpPDPyA2ZzFwcKxg" target="_blank"><img src="images/youtube_icon.png" style="width: 50px;height: 50px;float: left;"/></a>
+										
+											<a href="https://www.linkedin.com/company/rezlytixglobe/" target="_blank"><img src="images/linkedin_icon.png" style="width: 50px;height: 50px;margin-top: 5px;float: left;margin-left: 10px;"/></a>
+										
+										
+								</div>
+								
+								<ul class="d-flex social-icon style-none">
+									
+								</ul>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+								<h5 class="footer-title">Links</h5>
+								<ul class="footer-nav-link style-none" style="font-weight: 300;">
+									<li style="font-weight: 500;margin-bottom: -7px;"><a href="index.html">Home</a></li>
+									<li style="font-weight: 500;margin-bottom: -7px;"><a href="technology.html">Technology</a></li>
+									<li style="font-weight: 500;margin-bottom: -7px;"><a href="products.html">Products</a></li>
+									<li style="font-weight: 500;margin-bottom: -7px;"><a href="solution.html">Solutions</a></li>
+									<li style="font-weight: 500;margin-bottom: -7px;"><a href="team.html">Our Teams</a></li>
+									<li style="font-weight: 500;"><a href="company.html">Company</a></li>
+								</ul>
+							</div>
+							<!-- <div class="col-xl-2 col-md-3 col-sm-6 mb-30">
+										<h5 class="footer-title">Legal</h5>
+										<ul class="footer-nav-link style-none">
+											<li><a href="faq.html">Terms of use</a></li>
+											<li><a href="faq.html">Terms & conditions</a></li>
+											<li><a href="faq.html">Privacy policy</a></li>
+											<li><a href="faq.html">Cookie policy</a></li>
+										</ul>
+									</div> -->
+							<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+								<div class="newsletter ps-xl-5">
+									<h5 class="footer-title">Address </h5>
+									<p id="footer-text-2">2nd Floor, 39, Suite 425, NGEF Lane Indiranagar
+		Bengaluru(Bangalore) Urban, Karnataka, 560038</p>
+								</div> <!-- /.newsletter -->
+		
+								
+							</div>
+		
+							<div class="col-lg-3 col-md-3 col-sm-6 mb-30">
+								<div class="newsletter ps-xl-5">
+									<h5 class="footer-title">Email</h5>
+									<p id="footer-text-1">info@rezlytix.com</p>
+								</div> <!-- /.newsletter -->
+		
+							</div>
+						</div>
+		
+						<div class="bottom-footer">
+							<div class="d-lg-flex justify-content-between align-items-center">
+								<ul class="order-lg-1 pb-15 d-flex justify-content-center footer-nav style-none">
+									<!-- <li><a href="faq.html">Privacy &amp; Terms.</a></li>
+											<li><a href="faq.html">FAQ</a></li> -->
+								
+								</ul>
+								<p class="copyright text-center order-lg-0 pb-15" id="footer-text">Copyright @2022 Rezlytix inc.</p>
+							</div>
+						</div>
+					</div> <!-- /.inner-wrapper -->
+				</div>
+			</div> <!-- /.footer-style-two -->
+
+
+			<button class="scroll-top" style="background-color:#029ddf">
+				<i class="bi bi-arrow-up-short"></i>
+			</button>
+			
+			
+
+
+		<!-- Optional JavaScript _____________________________  -->
+
+    	<!-- jQuery first, then Bootstrap JS -->
+    	<!-- jQuery -->
+		<script src="vendor/jquery.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<!-- AOS js -->
+		<script src="vendor/aos-next/dist/aos.js"></script>
+		<!-- Slick Slider -->
+		<script src="vendor/slick/slick.min.js"></script>
+		<!-- js Counter -->
+		<script src="vendor/jquery.counterup.min.js"></script>
+		<script src="vendor/jquery.waypoints.min.js"></script>
+		<!-- Fancybox -->
+		<script src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+
+		<!-- Theme js -->
+		<script src="js/theme.js"></script>
+		</div> <!-- /.main-page-wrapper -->
+	</body>
+</html>
