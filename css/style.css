@@ -5587,6 +5587,7 @@ overflow: hidden;
   
   }
 
+
   
   @media only screen and (max-width: 575px) and (min-width: 515.5px)  {
     .buildai-home-btn{
@@ -5638,6 +5639,62 @@ overflow: hidden;
       
     }
 
+  }
+
+
+  @media only screen and (max-width: 1200px) and (min-width: 768px){
+ 
+    .storm_text{
+    
+     
+     padding-bottom: 22px;
+    }
+    .fault_text{
+      padding-bottom: 22px;
+      
+      
+    }
+  }
+
+  @media only screen and (max-width: 768px) and (min-width: 600px){
+  
+    .storm_text,.prolytix_text,.wedge_text{
+    
+     
+     padding-bottom: 40px;
+    }
+    .fault_text{
+      padding-bottom: 58px;
+     }
+     #storm-text{
+      padding-bottom: 58px !important;
+     
+     }
+  }
+  @media only screen and (min-width: 1200px){
+ 
+    .storm_text{
+    
+     
+     padding-bottom: 23px;
+    }
+    .fault_text{
+      padding-bottom: 22px;
+      
+      
+    }
+    .product_second_row{
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 992px) and (min-width: 768px){
+ 
+ 
+    .prolytix_text{
+      padding-bottom: 22px;
+      
+    }
   }
 
 
