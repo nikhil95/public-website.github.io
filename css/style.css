@@ -93,8 +93,8 @@ justify-content: center;
        
     }
     .more-btn{
-        background-color: #fff;
-        color: #382e2e;
+      background-color: #029DDF;
+        color: #fff;
         padding: 2px 16px;
         margin: auto;
         display: flex;
@@ -104,9 +104,10 @@ justify-content: center;
         text-decoration: none;
         letter-spacing: 1.1;
         margin-top: 10px;
+        transition: all 0.3s ease-in-out;
     }
     .more-btn:hover,.more-btn1:hover,.more-btn2:hover{
-      background-color: #000F5C;
+      background-color: #003a53;
       color: #fff;
     }
     .more-btn1{
@@ -119,12 +120,12 @@ justify-content: center;
         border-radius: 30px;
         text-decoration: none;
         letter-spacing: 1.1;
-        
+        transition: all 0.3s ease-in-out;
         margin-top: 10px;
     }
     .more-btn2{
-        background-color: #fff;
-        color: #382e2e;
+      background-color: #029ddf;
+        color: #fff;
         padding: 10px;
         display: flex;
         justify-content: center;
@@ -132,9 +133,27 @@ justify-content: center;
         border-radius: 30px;
         text-decoration: none;
         letter-spacing: 1.1;
-        
+        transition: all 0.3s ease-in-out;
         margin-top: 10px;
     }
+    .more-btn3{
+      background-color: #000F5C;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      border-radius: 30px;
+      text-decoration: none;
+      letter-spacing: 1.1;
+      transition: all 0.3s ease-in-out;
+      margin-top: 10px;
+    }
+    .more-btn3:hover{
+      background-color: #000931;
+      color: #fff;
+    }
+
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: rgb(184, 181, 181);
         opacity: 1; /* Firefox */
