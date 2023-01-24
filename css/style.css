@@ -107,7 +107,7 @@ justify-content: center;
         transition: all 0.3s ease-in-out;
     }
     .more-btn:hover,.more-btn1:hover,.more-btn2:hover{
-      background-color: #003a53;
+      background-color: #00567a;
       color: #fff;
     }
     .more-btn1{
@@ -137,7 +137,7 @@ justify-content: center;
         margin-top: 10px;
     }
     .more-btn3{
-      background-color: #000F5C;
+      background-color: #4f5783;
       color: #fff;
       padding: 10px;
       display: flex;
@@ -150,7 +150,7 @@ justify-content: center;
       margin-top: 10px;
     }
     .more-btn3:hover{
-      background-color: #000931;
+      background-color: #202a63;
       color: #fff;
     }
 
