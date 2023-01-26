@@ -5720,3 +5720,11 @@ overflow: hidden;
 #dime-txt{
   font-size: 26px !important;
 }
+
+@media only screen and (max-width: 1400px) and (min-width: 1200px){
+
+
+.product_card_h4{
+  margin-top: 60px;
+}
+}
